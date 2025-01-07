@@ -1,0 +1,269 @@
+/* Modal General Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
+    overflow: auto; /* Enable scroll if content is long */
+}
+
+/* Modal Content Styling */
+.modal-Description {
+    background-color: #ffffff; /* White background for modal content */
+    margin: 10% auto; /* Center the modal vertically and horizontally */
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    width: 50%; /* Set a width for the modal content */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out; /* Add fade-in animation */
+}
+
+/* Close Button Styling */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover,
+.close-btn:focus {
+    color: #000;
+    text-decoration: none;
+}
+
+/* Buttons Inside Modals */
+button {
+    padding: 10px 15px;
+    margin: 10px 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button[type="submit"] {
+    background-color: #4CAF50; /* Green */
+    color: white;
+}
+
+button[type="submit"]:hover {
+    background-color: #45a049;
+}
+
+button[type="button"] {
+    background-color: #f44336; /* Red */
+    color: white;
+}
+
+button[type="button"]:hover {
+    background-color: #d32f2f;
+}
+
+/* Modal Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Modal Styling */
+@media screen and (max-width: 768px) {
+    .modal-Description {
+        width: 90%; /* Full width on smaller screens */
+    }
+}
+
+
+
+/* General Table Styling */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    text-align: left;
+    table-layout: fixed; /* Ensures equal distribution */
+}
+
+thead th {
+    background-color: #003049;
+    padding: 10px;
+    text-align: center;
+    font-weight: bold;
+}
+
+tbody td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+    word-wrap: break-word; /* Handles long text properly */
+}
+
+/* Button Styling */
+button {
+    font-size: 12px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+
+/* Response Button Styling */
+.response-btn {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.response-btn:hover {
+    background-color: #ccff33;
+    color: #000;
+}
+
+/* Delete Button Styling */
+.delete-btn {
+    background-color: #f44336;
+    color: white;
+}
+
+.delete-btn:hover {
+    background-color: #d00000;
+}
+
+.message {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    text-align: center;
+}
+.status-label {
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 0.9em;
+    color: #fff;
+    display: inline-block;
+}
+
+.status-label.solved {
+    background-color: #28a745; /* Green for solved */
+}
+
+.status-label.progress {
+    background-color: #ffc107; /* Yellow for progress */
+    color: #000; /* Black text for contrast */
+}
+
+.status-label.pending {
+    background-color: #dc3545; /* Red for pending */
+}
+
+.status-label.unknown {
+    background-color: #6c757d; /* Gray for unknown */
+}
+
+
+/* Modal Container */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Ensure it appears above other elements */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scrolling if needed */
+    background-color: rgba(0, 0, 0, 0.6); /* Black background with opacity */
+}
+
+/* Modal Content */
+.modal-Description {
+    background-color: #fff;
+    margin: 10% auto; /* Centered */
+    padding: 20px;
+    border-radius: 8px;
+    width: 50%; /* Half the screen width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Close Button */
+.close-btn {
+    color: #aaa;
+    float: right;
+    font-size: 24px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+.close-btn:hover {
+    color: #ff5a5a; /* Highlighted color when hovered */
+}
+
+/* Headings */
+.modal-Description h2 {
+    margin-top: 0;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Form and Buttons */
+.modal-Description form {
+    margin-top: 15px;
+}
+
+.modal-Description p {
+    font-size: 16px;
+    margin: 8px 0;
+    color: #555;
+}
+
+textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 15px;
+    resize: vertical;
+}
+
+
+
+/* Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .modal-Description {
+        width: 80%; /* Make the modal narrower on smaller screens */
+    }
+
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+
+    textarea {
+        font-size: 12px;
+    }
+}
+
