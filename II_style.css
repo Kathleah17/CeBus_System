@@ -1,27 +1,4 @@
-/* Modal General Styling */
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black background */
-    overflow: auto; /* Enable scroll if content is long */
-}
 
-/* Modal Content Styling */
-.modal-Description {
-    background-color: #ffffff; /* White background for modal content */
-    margin: 10% auto; /* Center the modal vertically and horizontally */
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 10px;
-    width: 50%; /* Set a width for the modal content */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    animation: fadeIn 0.3s ease-in-out; /* Add fade-in animation */
-}
 
 /* Close Button Styling */
 .close-btn {
@@ -76,26 +53,27 @@ button[type="button"]:hover {
         opacity: 1;
     }
 }
-
 /* Responsive Modal Styling */
 @media screen and (max-width: 768px) {
     .modal-Description {
         width: 90%; /* Full width on smaller screens */
     }
 }
-
-
-
 /* General Table Styling */
-table {
+/**table {
     width: 100%;
     border-collapse: collapse;
     text-align: left;
-    table-layout: fixed; /* Ensures equal distribution */
+    table-layout: fixed; /* Ensures equal distribution 
 }
 
-thead th {
-    background-color: #003049;
+ th {
+    padding: 10px;
+    text-align: center;
+}
+thead tr {
+    background-color: red;
+    color: white; /* Optional: make the text white for contrast 
     padding: 10px;
     text-align: center;
     font-weight: bold;
@@ -105,8 +83,23 @@ tbody td {
     padding: 10px;
     border: 1px solid #ddd;
     text-align: center;
-    word-wrap: break-word; /* Handles long text properly */
+    word-wrap: break-word; /* Handles long text properly 
 }
+
+
+td {
+    border: 1px solid #d6ccc2; /* Border for table cells 
+    padding: 8px; /* Padding inside cells 
+   
+}
+
+tr:nth-child(even) {
+    background-color: #d6ccc2; /* Light beige background for even rows 
+    color: black; /* Black text for even rows 
+
+}**/
+
+
 
 /* Button Styling */
 button {
@@ -188,13 +181,16 @@ button {
 
 /* Modal Content */
 .modal-Description {
-    background-color: #fff;
+    background-color: #fdf0d5;
     margin: 10% auto; /* Centered */
     padding: 20px;
     border-radius: 8px;
-    width: 50%; /* Half the screen width */
+    width: 30%; /* Half the screen width */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     animation: fadeIn 0.3s ease-in-out;
+}
+.modal-Description strong{
+    color: #f94144;
 }
 
 /* Close Button */
@@ -214,25 +210,27 @@ button {
 /* Headings */
 .modal-Description h2 {
     margin-top: 0;
-    color: #333;
-    font-size: 24px;
+    color: #780000;
+    font-size: 25px;
+    margin-left: 10px;
 }
 
 /* Form and Buttons */
 .modal-Description form {
     margin-top: 15px;
+    margin: 10px;
 }
 
 .modal-Description p {
-    font-size: 16px;
+    font-size: 18px;
     margin: 8px 0;
-    color: #555;
+    color: #003049;
 }
 
 textarea {
-    width: 100%;
+    width: 90%;
     padding: 10px;
-    font-size: 14px;
+    font-size: 16px;
     border: 1px solid #ccc;
     border-radius: 4px;
     margin-bottom: 15px;
