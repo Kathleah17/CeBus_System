@@ -14,19 +14,33 @@
     font-family: Georgia, serif;
     color: #003049;
 }
+/*this Table Style is GENERAL*/
 table {
-    color: white;
     border-collapse: collapse;
     width: 100%;
-}
-td, th {
-    border: 1px solid white;
     text-align: left;
-    padding: 8px;
-    background-color: #003049;
+    table-layout: fixed; /* Ensures equal distribution */
+}
+ thead tr {
+    font-size: 18px;
+    color: white; /* White text color for the header row */
+    text-align: center;
+    background-color: #001d3d !important;
+    word-wrap: break-word; /* Handles long text properly */
+}
+td {
+    text-align: center; /* Center the text */
+
+    border: 1px solid #d6ccc2; /* Border for table cells */
+    padding: 8px; /* Padding inside cells */
 }
 tr:nth-child(even) {
-    background-color: #003049;
+    background-color: #2a6f97;
+    color: whitesmoke;
+}
+tr:nth-child(odd) {
+    background-color: #014f86;
+    color: whitesmoke;
 }
 form label {
     font-size: 20px;
@@ -152,7 +166,7 @@ button {
     width: 50%;
 }
 .modal-content {
-    background: #fff; 
+    background: #efefd0; 
     border-radius: 8px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     padding: 20px;
